@@ -27,7 +27,7 @@ async function registerSlashCommands(client, commands){
     console.log("----------------------------------------------------------------");
   }catch(error){
     console.log`❌\tThere was an error: ${error}`;
-  };
+  }
 }
 
 
