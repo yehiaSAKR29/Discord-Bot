@@ -49,4 +49,4 @@ for(const folder of eventFolders){
 
 
 //logs in
-client.login(process.env['BOT_TOKEN']);
+client.login(BOT_TOKEN);
