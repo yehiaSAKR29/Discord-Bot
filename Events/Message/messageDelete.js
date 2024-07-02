@@ -8,7 +8,7 @@ module.exports = {
       return;
     }
 
-    const logsChannel = process.env["LOGS_CHANNEL"];
+    const logsChannel = LOGS_CHANNEL;
     const channel = message.guild.channels.cache.get(logsChannel);
 
     if (!channel) {
