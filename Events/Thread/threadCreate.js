@@ -16,9 +16,10 @@ module.exports = {
     const logsEmbed = new EmbedBuilder()
       .setColor(0xff0000)
       .setTitle("🔗 Thread Created")
+      .addFields({name: "Name", value: `> ${thread.name}`})
+      .addFields({name: "Created By", value: `> ${thread.guild.members.cache.get(thread.ownerId)}`})
       .addFields({name: "Channel", value: `> <#${thread.id}>`})
       .addFields({name: "Created At", value: `> <#${thread.parent.id}>`})
-      .addFields({name: "Created By", value: `> ${thread.guild.members.cache.get(thread.ownerId)}`})
       .setTimestamp()
       .setFooter({text: 'Log System'})
 
