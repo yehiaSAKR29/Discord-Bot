@@ -18,7 +18,6 @@ module.exports = {
       .setTitle("🎭 Role Deleted")
       .addFields({name: "Name", value: `> ${role.name}`})
       .addFields({name: "ID", value: `> ${role.id}`})
-      .addFields({name: "Color", value: `> ${role.hexColor}`})
       .setTimestamp()
       .setFooter({text: 'Log System'})
 
