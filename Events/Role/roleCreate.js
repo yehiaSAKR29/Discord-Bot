@@ -16,10 +16,13 @@ module.exports = {
     const logsEmbed = new EmbedBuilder()
       .setColor(0xff0000)
       .setTitle("🎭 Role Created")
+      .addFields({name: "Name", value: `> ${role.name}`})
       .addFields({name: "ID", value: `> ${role.id}`})
+      .addFields({name: "Role", value: `> ${role}`})
+      .addFields({name: "Color", value: `> ${role.hexColor}`})
       .setTimestamp()
       .setFooter({text: 'Log System'})
-
+    
     channel.send({embeds: [logsEmbed]});
   }
 }
