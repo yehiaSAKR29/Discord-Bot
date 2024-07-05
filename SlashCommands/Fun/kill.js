@@ -7,7 +7,7 @@ module.exports = {
     .addUserOption((option) =>
       option
         .setName('enemy')
-        .setDescription('The enemy to kill')
+        .setDescription('The enemy you want to kill')
         .setRequired(true)
     ),
 
