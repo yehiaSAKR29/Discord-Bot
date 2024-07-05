@@ -19,7 +19,7 @@ module.exports = {
     
     //checks if user has manage messages permission
     if(!interaction.member.permissions.has(PermissionsBitField.Flags.ManageMessages)){
-      interaction.reply({content: "You don\'t have permissions to use this command.", ephemeral: true});
+      interaction.reply({content: "You don't have permissions to use this command!", ephemeral: true});
       return;
     }
     
