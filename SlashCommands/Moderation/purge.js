@@ -6,10 +6,10 @@ module.exports = {
     .setName('purge')
     .setDescription('Purges messages in the channel')
     .addIntegerOption((option) =>
-        option
-          .setName('number')
-          .setDescription('Number of messages to purge')
-          .setRequired(true)
+      option
+        .setName('number')
+        .setDescription('Number of messages to purge')
+        .setRequired(true)
     ),
   
   async execute(interaction){
