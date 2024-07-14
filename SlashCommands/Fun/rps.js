@@ -15,7 +15,7 @@ module.exports = {
   async execute(interaction) {
     const opponent = interaction.options.getUser('opponent');
     const choices = [
-      {name: 'Rock', emoji: '🪨', beats: 'Scissors'},
+      {name: 'Rock', emoji: '🗿', beats: 'Scissors'},
       {name: 'Paper', emoji: '📄', beats: 'Rock'},
       {name: 'Scissors', emoji: '✂️', beats: 'Paper'}
     ];
